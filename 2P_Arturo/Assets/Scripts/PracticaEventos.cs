@@ -5,7 +5,7 @@ using TMPro;
 
 public class PracticaEventos : MonoBehaviour
 {
-
+    public static PracticaEventos instance;
     public TMP_Text Notification;
     public int Counter;
     // Start is called before the first frame update
