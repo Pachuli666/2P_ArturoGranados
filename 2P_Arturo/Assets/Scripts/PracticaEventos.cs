@@ -17,18 +17,26 @@ public class PracticaEventos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        PlusPoint();
     }
 
    public void PlusPoint()
     {
         Counter++;
-        
+        CheckPoints();
     }
 
     public void CheckPoints()
     {
+        if(Counter >= 100)
+        {
+            Notification.text = "Logro desbloqueado: 100 puntos";
+        }
 
+        else{
+
+            return;
+        }
     }
       
 }
